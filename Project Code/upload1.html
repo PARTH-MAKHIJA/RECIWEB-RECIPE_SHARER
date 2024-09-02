@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html><html>
+    <head>
+      <link rel="shortcut icon" href="pngwing.com.png" type="image/x-icon">
+        <title>RECIWEB-UPLOADER</title>
+        <link rel="stylesheet"
+        type="text/css"
+        a href="uploadproject.css">
+    </head>
+<body>
+    <header>
+        <body>
+            <body>
+                <div class="login">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="align-center">
+                                    <div class="content">
+                                        <img src="pngwing.com.png" alt="" center><p>RECIWEB</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    
+            </div>
+    <body>
+        <section class="social-section">
+            <div class="social-wrap half-width">
+                        <div id="bgimg">
+    <h1>Upload Your Recipe</h1>
+    <form id="video-upload-form"enctype="multipart/form-data">
+        <input type="file" id="video-file" accept="video/*" name="video" required>
+        <button type="submit"  class="link-button">Upload Video</button>
+    </form>
+    <div id="upload-status"></div>
+    <video controls id="uploaded-video" style="display: none;"></video>
+
+    <script src="upload.js"></script>
+
+    <h1>Camera Opening Feature</h1>
+    <button id="start-camera" class="link-button">Start Camera</button>
+    <video id="camera-feed" class="link-button" autoplay playsinline style="display: none;"></video>
+    <button id="stop-camera" class="link-button" style="display: none;">Stop Camera</button>
+
+    <script>
+        const startCameraButton = document.getElementById("start-camera");
+        const stopCameraButton = document.getElementById("stop-camera");
+        const cameraFeed = document.getElementById("camera-feed");
+
+        startCameraButton.addEventListener("click", async () => {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                cameraFeed.srcObject = stream;
+                cameraFeed.style.display = "block";
+                startCameraButton.style.display = "none";
+                stopCameraButton.style.display = "block";
+            } 
+            catch (error) {
+                console.error("Error accessing camera:", error);
+            }
+        });
+
+        stopCameraButton.addEventListener("click", () => {
+            const stream = cameraFeed.srcObject;
+            const tracks = stream.getTracks();
+            tracks.forEach((track) => track.stop());
+            cameraFeed.srcObject = null;
+            cameraFeed.style.display = "none";
+            startCameraButton.style.display = "block";
+            stopCameraButton.style.display = "none";
+        });
+    </script>
+                        </div>
+            </div>
+        </section>
+</body>
+</html>

@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+    
+      
+        
+    .watermark {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      background-color: #444;
+      transform: translate(-50%, -50%);
+      opacity: 0.1;
+      font-size: 80px;
+      color: #ccc;
+      pointer-events: none;
+    }
+
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  p {
+    color: #444;
+    line-height: 25px;
+  }
+  .container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+  }
+  header {
+    padding-bottom: 50px;
+  }
+  header,
+  .intro-section {
+    background-color: #ededed;
+
+  }
+  .header-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 20%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    width: 20%;
+  }
+  .logo span {
+    font-size: 30px;
+    font-weight: 900;
+    color: #72bb5e;
+    font-family: "Berkshire Swash", cursive;
+  }
+  .menu-box {
+    width: 75%;
+  }
+  .menu-box ul {
+    float: right;
+  }
+  .menu-box ul li {
+    display: inline-block;
+  }
+  .menu-box ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 20px;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .menu-box .active {
+    color: #72bb5e;
+  }
+  .half-width {
+    display: flex;
+    justify-content: space-between;
+  }
+  .intro-img {
+    width: 50%;
+  }
+  .intro-img img {
+    width: 100%;
+  }
+  .intro-wrap {
+    padding-top: 2em;
+    padding-bottom: 8em;
+    overflow: hidden;
+  }
+  .intro-title {
+    width: 50%;
+  }
+  .intro-title h1 {
+    color: #363958;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 20px;
+  }
+  .intro-title span {
+    display: block;
+  }
+  .span-color {
+    color: #72bb5e;
+  }
+  .intro-title p {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+  .link-button {
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(90deg, #363958, #72bb5e);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .about-section {
+    background-image: url(images/frame4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 80px 0;
+  }
+  .about-img {
+    width: 50%;
+  }
+  .about-img img {
+    width: 80%;
+  }
+  .about-title {
+    color: #444;
+    width: 45%;
+    height: 450px;
+  }
+  .about-title h2 {
+    font-size: 50px;
+    margin-bottom: 2rem;
+  }
+  .about-title p {
+    margin-bottom: 8rem;
+    text-align: justify;
+  }
+  
+  .recipie-header {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  .recipie-header h1 {
+    color: #444;
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  .recipie-box span {
+    color: #363958;
+  }
+  .recipie-wrap {
+    padding: 20px 0;
+    overflow: hidden;
+    display: flex;
+  }
+  .recipie-box {
+    width: 25%;
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  .recipie-box img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .recipie-box h2 {
+    margin: 15px 0;
+  }
+  .recipie-box p {
+    width: 100%;
+    text-align: justify;
+  }
+  .delivery-header {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  .delivery-header h1 {
+    color: #444;
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  .delivery-box span {
+    color: #363958;
+  }
+  .delivery-wrap {
+    padding: 20px 0;
+    overflow: hidden;
+  }
+  .delivery-box {
+    width: 25%;
+    padding: 2%;
+    text-align: center;
+  }
+  
+  .delivery-box img {
+    width: 100%;
+    height: 300px;
+  }
+  .delivery-box h2 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  .delivery-box p {
+    width: 100%;
+    text-align: justify;
+  }
+  
+  
+  footer {
+    background-color: #363958;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  footer h1 {
+    color: #72bb5e;
+    margin-bottom: 2rem;
+    font-family: "Berkshire Swash", cursive;
+  }
+  footer h1 span {
+    color: white;
+  }
+  footer p {
+    color: white;
+    margin-bottom: 4rem;
+  }
+  footer span {
+    color: #999;
+  }
+  

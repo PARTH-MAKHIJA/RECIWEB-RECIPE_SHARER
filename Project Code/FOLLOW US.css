@@ -1,0 +1,13 @@
+.social-wrap {
+    width: 30%;
+    margin: 5rem auto;
+    padding: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px 5px;
+    border-radius: 20px;
+  }
+  .social-wrap h1 {
+    font-family: "Berkshire Swash", cursive;
+    font-size: 40px;
+    color: #333;
+  }

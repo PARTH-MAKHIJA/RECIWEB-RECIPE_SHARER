@@ -1,4 +1,4 @@
-
+/* 
 .header-wrap {
   display: flex;
   
@@ -57,4 +57,174 @@
       font-size: 18px;
       font-weight: bold;
     }
-    
+     */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ededed;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: 900;
+  color: #72bb5e;
+  font-family: "Berkshire Swash", cursive;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #72bb5e;
+}
+
+/* Upload Section */
+.upload-section, .camera-section, .stored-videos-section {
+  padding: 40px 0;
+}
+
+.social-wrap {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.social-wrap h1, .social-wrap h2 {
+  font-family: "Berkshire Swash", cursive;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.upload-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#video-file {
+  padding: 10px;
+  border: 2px solid #72bb5e;
+  border-radius: 5px;
+}
+
+.link-button {
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, #363958, #72bb5e);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.link-button:hover {
+  background-image: linear-gradient(90deg, #72bb5e, #363958);
+}
+
+.video-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.video-gallery video {
+  width: 200px;
+  height: 150px;
+  border: 2px solid #72bb5e;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-wrap {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .video-gallery {
+      justify-content: center;
+  }
+}

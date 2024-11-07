@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html><html>
     <head>
       <link rel="shortcut icon" href="pngwing.com.png" type="image/x-icon">
@@ -74,5 +74,80 @@
                         </div>
             </div>
         </section>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECIWEB-UPLOADER</title>
+    <link rel="shortcut icon" href="pngwing.com.png" type="image/x-icon">
+    <link rel="stylesheet" href="uploadproject.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="logo">
+                    <img src="pngwing.com.png" alt="Logo" />
+                    <span>Reciweb</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="XYZ.html">Home</a></li>
+                        <li><a href="RECIPEREVEAL.html">Reveal Your Recipe</a></li>
+                        <li><a href="FOLLOW US.html">About</a></li>
+                        <li><a href="Contact us.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <div class="social-wrap">
+                <h1>Upload Your Recipe Video</h1>
+                <form id="video-upload-form" enctype="multipart/form-data">
+                    <input type="file" id="video-file" accept="video/*" name="video" required>
+                    <button type="submit" class="link-button">Upload Video</button>
+                </form>
+                <div id="upload-status"></div>
+                <div id="video-preview" class="video-container">
+                    <video controls id="uploaded-video" style="display: none;"></video>
+                    <button id="delete-video" class="delete-button" style="display: none;">Delete Video</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="camera-section">
+            <div class="social-wrap">
+                <h1>Camera Feature</h1>
+                <button id="start-camera" class="link-button">Start Camera</button>
+                <button id="stop-camera" class="link-button" style="display: none;">Stop Camera</button>
+                <video id="camera-feed" autoplay playsinline style="display: none;"></video>
+            </div>
+        </section>
+
+        <section class="stored-videos-section">
+            <div class="social-wrap">
+                <h2>Previously Uploaded Videos</h2>
+                <div id="stored-videos" class="video-gallery">
+                    <!-- Stored videos will be displayed here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Reciweb. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="upload.js"></script>
 </body>
 </html>
